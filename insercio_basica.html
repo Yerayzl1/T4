@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Inserció bàsica d'imatges</title>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4"
+      >
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-center"
+        >
+          <li>
+            <a
+              href="./insercio_basica.html"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page"
+              >Inserció bàsica</a
+            >
+          </li>
+          <li>
+            <a
+              href="./imatges_responsives.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Imatges responsives</a
+            >
+          </li>
+          <li>
+            <a
+              href="./galeria_lightbox.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Galeria Lightbox</a
+            >
+          </li>
+          <li>
+            <a
+              href="./mapa_interactiu.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Mapa interactiu</a
+            >
+          </li>
+          <li>
+            <a
+              href="./lazy_loading.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Lazy Loading</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Pràctica 1: Inserció bàsica d’imatges -->
+    <div class="container mx-auto p-4 mt-20">
+      <h1 class="text-3xl font-bold mb-4">Inserció bàsica d’imatges</h1>
+      <img
+        class="rounded-lg shadow-lg mb-4"
+        src="https://images.unsplash.com/photo-1731796603747-409787efd360?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Una muntanya coberta de neu amb arbres en primer pla"
+      />
+      <h2 class="text-2xl font-semibold mb-2">
+        Per què creus que l’atribut alt és important per a les imatges?
+      </h2>
+      <p class="text-lg">
+        Es important per a les imatges perquè permet descriure el contingut de
+        la imatge. A més, l’atribut alt també és útil per a les cerques en
+        línia, ja que els motors de cerca poden indexar el contingut de les
+        imatges a partir del text alternatiu.
+      </p>
+    </div>
+
+    <!-- Pràctica 2: Formats d’imatge i atributs -->
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-4">Formats d’imatge i atributs</h1>
+      <img
+        class="rounded-lg shadow-lg mb-4"
+        src="https://images.unsplash.com/photo-1732186920167-504a11c1b90f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Una vista de la esquirla de la esquirla de la esquirla de la a1"
+        width="400"
+        height="300"
+      />
+      <img
+        class="rounded-lg shadow-lg mb-4"
+        src="https://images.unsplash.com/photo-1731902062633-1496d7bcf95c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Una gran formació rocosa en mig d’un desert"
+        width="400"
+        height="300"
+      />
+      <h2 class="text-2xl font-semibold mb-2">
+        Quina diferència hi ha entre la mida real de la imatge i els atributs
+        width i height?
+      </h2>
+      <p class="text-lg">
+        La diferència entre la mida real i els atributs es que la mida original
+        agafa tota l'amplitud de la imatge, mentre que els atributs width i
+        height permeten ajustar la mida de la imatge a la pàgina sense
+        distorsionar-la.
+      </p>
+    </div>
+  </body>
+</html>

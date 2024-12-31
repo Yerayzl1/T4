@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Galeria Lightbox</title>
+    <style>
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 16px;
+      }
+      .gallery img {
+        width: 100%;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto p-4"
+      >
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-center"
+        >
+          <li>
+            <a
+              href="./insercio_basica.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Inserció bàsica</a
+            >
+          </li>
+          <li>
+            <a
+              href="./imatges_responsives.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Imatges responsives</a
+            >
+          </li>
+          <li>
+            <a
+              href="./galeria_lightbox.html"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              aria-current="page"
+              >Galeria Lightbox</a
+            >
+          </li>
+          <li>
+            <a
+              href="./mapa_interactiu.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Mapa interactiu</a
+            >
+          </li>
+          <li>
+            <a
+              href="./lazy_loading.html"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Lazy Loading</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Pràctica 5: Galeria amb efecte Lightbox -->
+    <div class="container mx-auto p-4 mt-20">
+      <h1 class="text-3xl font-bold mb-4">Galeria amb efecte Lightbox</h1>
+      <div class="gallery">
+        <a href="#" data-lightbox="galeria" data-title="Imatge 1">
+          <img src="https://picsum.photos/200/300" alt="Imatge 1" />
+        </a>
+        <a href="#" data-lightbox="galeria" data-title="Imatge 2">
+          <img src="https://picsum.photos/250/350" alt="Imatge 2" />
+        </a>
+        <a href="#" data-lightbox="galeria" data-title="Imatge 3">
+          <img src="https://picsum.photos/300/400" alt="Imatge 3" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
